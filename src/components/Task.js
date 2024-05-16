@@ -10,17 +10,18 @@ export default function Task({ task, onEdit }) {
   };
 
   return (
+    
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-10 pb-6 px-10 pt-5 md:pt-8 justify-center items-center">
-      <div className="lg:col-span-2 text-justify flex lg:justify-evenly  items-center">
+      <div className="lg:col-span-2 capitalize text-justify flex lg:justify-evenly  items-center">
         {task.title}
       </div>
-      <div className="lg:col-span-2 text-justify flex lg:justify-evenly items-center">
+      <div className="lg:col-span-2 capitalize text-justify flex lg:justify-evenly items-center">
         {task.description}
       </div>
-      <div className="col-span-1 flex justify-center items-center">
+      <div className="col-span-1 flex capitalize justify-center items-center text-gray-500">
         {task.status}
       </div>
-      <div className="col-span-1 flex justify-center items-center">
+      <div className="col-span-1 flex justify-center items-center text-gray-500">
         {task.dueDate}
       </div>
       <div className="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">

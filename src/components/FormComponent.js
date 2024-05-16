@@ -20,7 +20,7 @@ export default function FormComponent({
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="w-2/3 md:w-1/2 flex flex-col mx-auto space-y-2 md:space-y-5 pt-5 md:pt-10 justify-center">
+      <div className="w-2/3 md:w-1/2 lg:w-1/3 flex flex-col mx-auto space-y-2 md:space-y-5 pt-5 md:pt-10 justify-center">
         <input
           type="text"
           value={title}

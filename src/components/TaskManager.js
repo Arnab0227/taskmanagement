@@ -73,6 +73,7 @@ export default function TaskManager() {
 
   return (
     <div>
+        <div className="flex justify-center pt-5 md:pt-8 text-2xl font-semibold">Add A New Task</div>
       <div ref={formRef}>
         <FormComponent
           title={title}
@@ -88,6 +89,9 @@ export default function TaskManager() {
           handleCancel={isEditing ? handleCancel : null}
         />
       </div>
+     <div className="flex justify-center py-5 md:py-8 text-2xl font-semibold">
+        Listed Tasks
+     </div>
       <div>
         {tasks
           .slice()
