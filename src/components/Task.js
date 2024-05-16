@@ -10,7 +10,6 @@ export default function Task({ task, onEdit }) {
   };
 
   return (
-    
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-10 pb-6 px-10 pt-5 md:pt-8 justify-center items-center">
       <div className="lg:col-span-2 capitalize text-justify flex lg:justify-evenly  items-center">
         {task.title}
